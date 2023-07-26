@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+            <ColumnDefinition Width="*"> </ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <Label FontSize="25" Grid.Column="0"> Hello World </Label>
     </Grid>
 </Window>

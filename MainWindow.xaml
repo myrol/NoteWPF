@@ -11,10 +11,26 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"> </ColumnDefinition>
-            <ColumnDefinition Width="*"> </ColumnDefinition>
+            <ColumnDefinition Width="*" MinWidth="300"></ColumnDefinition>
+            <ColumnDefinition Width="4"></ColumnDefinition>
+            <ColumnDefinition Width="*" MinWidth="300"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Label FontSize="25" Grid.Column="0"> Hello World </Label>
+        <StackPanel Grid.Column="0" Margin="5">
+            <Label>Title</Label>
+            <TextBox x:Name="NoteTitle"></TextBox>
+            <Label>Note</Label
+            <TextBox x:Name="NoteContent" AcceptsReturn="True"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Stretch"/> 
+        </StackPanel>
+        <GridSplitter Grid.Column="1" 
+                      Width="5" 
+                      HorizontalAlignment="Stretch" 
+                      Background="#676767"/>
+        <StackPanel Grid.Column="2" Margin="5">
+            <Label>Saved Notes</Label>
+        </StackPanel>
+
     </Grid>
 </Window>
